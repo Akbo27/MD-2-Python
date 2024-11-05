@@ -91,8 +91,8 @@ class User:
         return f"User is {self.username}"
     
 class Admin(User):
-    def__init__(self, name, contact_info):
-    super().__init__(name, contact_info)
+    def __init__(self, name, contact_info):
+        super ().__init__(name, contact_info)
 
     def add_movie(self,title, duration, rating):
         return Movie(title, duration, rating)
@@ -101,12 +101,3 @@ class Admin(User):
         showtime = ShowTime(movie, date_time)
         movie.add_showtime(showtime)
         return
-
-
-        
-
-
-
-
-
-        
